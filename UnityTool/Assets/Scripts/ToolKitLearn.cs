@@ -20,13 +20,17 @@ public class ToolKitLearn : EditorWindow
 
     private void CreateGUI()
     {
-        VisualElement root = rootVisualElement;
+        VisualElement container = new VisualElement();
 
-        Button myButton = new Button() {text = "My Button"};
+        rootVisualElement.Add(container);
 
-        myButton.style.width = 160;
-        myButton.style.height = 30;
+        Label title = new Label("UI Elements");
+        Label biggerTitle = new Label("Bigger Title");
         
-        root.Add(myButton);
+        container.Add(biggerTitle);
+        container.Add(title);
+
+
+
     }
 }
