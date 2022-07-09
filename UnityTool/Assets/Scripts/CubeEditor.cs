@@ -15,7 +15,7 @@ namespace DefaultNamespace
             
             GUILayout.BeginHorizontal();
             
-            if (GUILayout.Button("Generate Color"))
+            if (GUILayout.Button("Random Color"))
                 cube.GenerateColor();
             if(GUILayout.Button("Reset"))
                 cube.Reset();
